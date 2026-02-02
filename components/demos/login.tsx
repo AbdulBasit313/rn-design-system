@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import Input from '../ui/input'
 import Spacer from '../ui/spacer'
 
-export default function LoginDemo() {
+const LoginDemo = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Welcome Back</Text>
@@ -11,11 +14,22 @@ export default function LoginDemo() {
 
       <Spacer height={32} />
 
-      <Input icon="mail-outline" placeholder="Email address" />
+      <Input
+        icon="mail-outline"
+        value={email}
+        onChangeText={setEmail}
+        placeholder="Email address"
+      />
 
       <Spacer height={16} />
 
-      <Input icon="lock-closed-outline" placeholder="Password" secureTextEntry />
+      <Input
+        icon="lock-closed-outline"
+        value={password}
+        onChangeText={setPassword}
+        placeholder="Password"
+        secureTextEntry
+      />
 
       <Spacer height={24} />
 
@@ -25,6 +39,8 @@ export default function LoginDemo() {
     </View>
   )
 }
+
+export default LoginDemo
 
 const styles = StyleSheet.create({
   container: {},

@@ -6,9 +6,17 @@ interface InputProps {
   icon: keyof typeof Ionicons.glyphMap
   placeholder: string
   secureTextEntry?: boolean
+  value?: string
+  onChangeText?: (text: string) => void
 }
 
-export default function Input({ icon, placeholder, secureTextEntry }: InputProps) {
+export default function Input({
+  icon,
+  placeholder,
+  secureTextEntry,
+  value,
+  onChangeText,
+}: InputProps) {
   return (
     <View style={styles.container}>
       <Ionicons name={icon} size={20} color={colors.icon} />
@@ -17,6 +25,8 @@ export default function Input({ icon, placeholder, secureTextEntry }: InputProps
         placeholderTextColor={colors.placeholder}
         secureTextEntry={secureTextEntry}
         style={styles.input}
+        value={value}
+        onChangeText={onChangeText}
       />
     </View>
   )

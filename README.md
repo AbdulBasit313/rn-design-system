@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# RN Design System ✨
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A minimal React Native design system built for real apps. Easy to use, customize, and scale.
 
-## Get started
+Made with ❤️ for the React Native community!
 
-1. Install dependencies
+> These are not just UI components. They are a design system. Reusable, delightful, and well-designed with cleaner code for faster development
 
-   ```bash
-   npm install
-   ```
+> Note:
+> _All components are created using Expo._
 
-2. Start the app
+### 6 UI Components
 
-   ```bash
-   npx expo start
-   ```
+**Button**
 
-In the output, you'll find options to open the app in a
+- Multiple Variants
+- Loading states
+- Support Icon
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![Button Component](/assets/images/components/button.jpeg)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**Input**
 
-## Get a fresh project
+- Clean and minimal UI
+- Support Icon
+- Login screen demo
 
-When you're ready, run:
+![Input Component](/assets/images/components/input.jpeg)
 
-```bash
-npm run reset-project
-```
+**Spacer**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Add space between elements
+- horizontal and vertical space
+- Control spacing using props
 
-## Learn more
+![Spacer Component](/assets/images/components/spacer.jpeg)
 
-To learn more about developing your project with Expo, look at the following resources:
+**Divider**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Separate sections
+- plain and dashed line
+- support text
 
-## Join the community
+![Divider Component](/assets/images/components/divider.jpeg)
 
-Join our community of developers creating universal apps.
+**Badge**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- multiple variants
+- easy to customize and add more styles
+
+![Badge Component](/assets/images/components/status-badge.jpeg)
+
+**Tabs**
+
+- Filter tabs
+- Minimal UI
+- Active state
+
+![Tabs Component](/assets/images/components/filter-tabs.jpeg)
+
+## Project Structure
+
+- `components/ui/` - Main UI components
+  - `button.tsx` - Button component
+  - `input.tsx` - Input component
+  - `spacer.tsx` - Spacer component
+  - `divider.tsx` - Divider component
+  - `badge.tsx` - Badge component
+  - `tabs.tsx` - Tabs component
+- `components/demos/` - Example usage
+  - `ButtonDemo.tsx` - Button examples
+  - `InputDemo.tsx` - Input examples
+  - `SpacerDemo.tsx` - Spacer examples
+  - `DividerDemo.tsx` - Divider examples
+  - `BadgeDemo.tsx` - Badge examples
+  - `TabsDemo.tsx` - Tabs examples
+
+### Features
+
+- Built for React Native
+- Easy to customize
+- Consistent design
+- Production ready
+- Clean code
+- Well documented
+
+### Need Help?
+
+Check the demos/ folder for examples of each component. Each demo file shows how to use the component with different props and settings.
+
+Did it help? show some love on [LinkedIn!](https://www.linkedin.com/in/abdulbasitprofile/)
+
+### License
+
+Open source - use freely in your projects!
