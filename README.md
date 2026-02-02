@@ -9,9 +9,18 @@ Made with ❤️ for the React Native community!
 > Note:
 > _All components are created using Expo._
 
-### 6 UI Components
+### UI Components
 
-**Button**
+- [Button](#button)
+- [Input](#input)
+- [Spacer](#spacer)
+- [Divider](#divider)
+- [Badge](#badge)
+- [Tabs](#tabs)
+
+## 🎯 UI Components
+
+### Button
 
 - Multiple Variants
 - Loading states
@@ -19,7 +28,7 @@ Made with ❤️ for the React Native community!
 
 ![Button Component](/assets/images/components/button.jpeg)
 
-**Input**
+### Input
 
 - Clean and minimal UI
 - Support Icon
@@ -27,7 +36,7 @@ Made with ❤️ for the React Native community!
 
 ![Input Component](/assets/images/components/input.jpeg)
 
-**Spacer**
+### Spacer
 
 - Add space between elements
 - horizontal and vertical space
@@ -35,7 +44,7 @@ Made with ❤️ for the React Native community!
 
 ![Spacer Component](/assets/images/components/spacer.jpeg)
 
-**Divider**
+### Divider
 
 - Separate sections
 - plain and dashed line
@@ -43,14 +52,14 @@ Made with ❤️ for the React Native community!
 
 ![Divider Component](/assets/images/components/divider.jpeg)
 
-**Badge**
+### Badge
 
 - multiple variants
 - easy to customize and add more styles
 
 ![Badge Component](/assets/images/components/status-badge.jpeg)
 
-**Tabs**
+### Tabs
 
 - Filter tabs
 - Minimal UI
@@ -75,7 +84,7 @@ Made with ❤️ for the React Native community!
   - `BadgeDemo.tsx` - Badge examples
   - `TabsDemo.tsx` - Tabs examples
 
-### Features
+## Features
 
 - Built for React Native
 - Easy to customize
@@ -84,12 +93,12 @@ Made with ❤️ for the React Native community!
 - Clean code
 - Well documented
 
-### Need Help?
+## Need Help?
 
 Check the demos/ folder for examples of each component. Each demo file shows how to use the component with different props and settings.
 
 Did it help? show some love on [LinkedIn!](https://www.linkedin.com/in/abdulbasitprofile/)
 
-### License
+## License
 
 Open source - use freely in your projects!
