@@ -1,7 +1,7 @@
-import Button from '@/components/ui/button'
 import Spacer from '@/components/ui/spacer'
 import { Ionicons } from '@expo/vector-icons'
 import { StyleSheet, Text, View } from 'react-native'
+import Button from '../ui/button/button'
 
 export default function ButtonDemo() {
   const handlePress = (variant: string, state: string = '') => {

@@ -1,73 +1,70 @@
-import React, { useState } from 'react'
+import { Ionicons } from '@expo/vector-icons'
+import { LinearGradient } from 'expo-linear-gradient'
+import { router } from 'expo-router'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
-import Input from '../ui/input'
-import Spacer from '../ui/spacer'
+import DemoContainer from './demo-container'
 
 const LoginDemo = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-
   return (
-    <View style={styles.container}>
-      <Text style={styles.heading}>Welcome Back</Text>
-      <Text style={styles.subText}>Login to your account</Text>
-
-      <Spacer height={32} />
-
-      <Input
-        icon="mail-outline"
-        value={email}
-        onChangeText={setEmail}
-        placeholder="Email address"
-      />
-
-      <Spacer height={16} />
-
-      <Input
-        icon="lock-closed-outline"
-        value={password}
-        onChangeText={setPassword}
-        placeholder="Password"
-        secureTextEntry
-      />
-
-      <Spacer height={24} />
-
-      <Pressable style={styles.button}>
-        <Text style={styles.buttonText}>Login</Text>
+    <DemoContainer title="Screens">
+      <Pressable onPress={() => router.push('/screens/login')} style={styles.card}>
+        <LinearGradient
+          colors={['#1C339A', '#2947C7']}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={styles.gradient}
+        >
+          <View style={styles.iconContainer}>
+            <Ionicons name="log-in-outline" size={28} color="#fff" />
+          </View>
+          <View style={styles.textContainer}>
+            <Text style={styles.title}>Login Screen</Text>
+            <Text style={styles.subtitle}>Tap to preview full screen</Text>
+          </View>
+          <Ionicons name="chevron-forward" size={24} color="rgba(255,255,255,0.8)" />
+        </LinearGradient>
       </Pressable>
-    </View>
+    </DemoContainer>
   )
 }
 
 export default LoginDemo
 
 const styles = StyleSheet.create({
-  container: {},
-
-  heading: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: '#111827',
+  card: {
+    borderRadius: 16,
+    overflow: 'hidden',
+    shadowColor: '#1C339A',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 4,
   },
-
-  subText: {
-    marginTop: 4,
-    fontSize: 14,
-    color: '#6B7280',
+  gradient: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 20,
+    gap: 16,
   },
-
-  button: {
-    height: 52,
+  iconContainer: {
+    width: 56,
+    height: 56,
     borderRadius: 14,
-    backgroundColor: '#111827',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
     alignItems: 'center',
     justifyContent: 'center',
   },
-
-  buttonText: {
-    color: '#FFFFFF',
-    fontSize: 16,
+  textContainer: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 18,
     fontWeight: '600',
+    color: '#fff',
+    marginBottom: 4,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: 'rgba(255, 255, 255, 0.8)',
   },
 })

@@ -4,10 +4,10 @@ A minimal React Native design system built for real apps. Easy to use, customize
 
 Made with ❤️ for the React Native community!
 
-> These are not just UI components. They are a design system. Reusable, delightful, and well-designed with cleaner code for faster development
+> These are not just UI components. They are a complete design system with components and screens. Reusable, delightful, and well-designed with cleaner code for faster development.
 
 > Note:
-> _All components are created using Expo._
+> _All components and screens are created using Expo with file-based routing._
 
 ### UI Components
 
@@ -66,6 +66,49 @@ Made with ❤️ for the React Native community!
 - Active state
 
 ![Tabs Component](/assets/images/components/filter-tabs.jpeg)
+
+## 📱 Screens
+
+### Login Screen
+
+A fully-featured, production-ready authentication screen.
+![Login Screen](/assets/images/screens//login%20screen%20ui.jpeg)
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── index.tsx                    # Home page with component showcase
+│   ├── screens/
+│   │   └── login.tsx                # Login screen route
+│   └── _layout.tsx                  # Root layout
+│
+├── components/
+│   ├── ui/                          # Core UI components
+│   │   ├── button/
+│   │   │   ├── button.tsx           # Solid button
+│   │   │   └── gradient-button.tsx  # Gradient button
+│   │   ├── text-input/
+│   │   │   ├── outlined.tsx         # Bordered input
+│   │   │   └── filled.tsx           # Soft background input
+│   │   ├── badge.tsx
+│   │   ├── divider.tsx
+│   │   ├── filter-tab.tsx
+│   │   └── spacer.tsx
+│   │
+│   └── demos/                       # Component demos
+│       ├── button.tsx
+│       ├── badge.tsx
+│       ├── divider.tsx
+│       ├── filter-tab.tsx
+│       ├── login.tsx
+│       ├── spacer.tsx
+│       └── demo-container.tsx
+│
+└── screens/
+    └── login/
+        └── login-screen.tsx         # Login implementation
+```
 
 ## Project Structure
 

@@ -13,7 +13,7 @@ interface DividerProps {
 }
 
 export default function Divider({
-  color = '#E5E7EB',
+  color = '#E2E8F0',
   thickness = 1,
   spacing = 16,
   vertical = false,
@@ -93,7 +93,6 @@ const styles = StyleSheet.create({
   text: {
     marginHorizontal: 12,
     fontSize: 13,
-    fontWeight: '500',
-    color: '#6B7280',
+    color: '#94A3B8',
   },
 })
