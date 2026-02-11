@@ -12,6 +12,7 @@ Made with ❤️ for the React Native community!
 ### UI Components
 
 - [Button](#button)
+- [Card](#card)
 - [Input](#input)
 - [Spacer](#spacer)
 - [Divider](#divider)
@@ -27,6 +28,14 @@ Made with ❤️ for the React Native community!
 - Support Icon
 
 ![Button Component](/assets/images/components/button.jpeg)
+
+### Card
+
+- 3 Variants - 'outlined' | 'filled' | 'elevated'
+- Support padding - 'none' | 'small' | 'medium' | 'large'
+- Easy for theming and customize
+
+![Card](/assets/images/screens/coffee-shop-app.jpeg)
 
 ### Input
 
@@ -91,6 +100,7 @@ A fully-featured, production-ready authentication screen.
 │   │   ├── text-input/
 │   │   │   ├── outlined.tsx         # Bordered input
 │   │   │   └── filled.tsx           # Soft background input
+│   │   ├── card.tsx
 │   │   ├── badge.tsx
 │   │   ├── divider.tsx
 │   │   ├── filter-tab.tsx
@@ -98,34 +108,21 @@ A fully-featured, production-ready authentication screen.
 │   │
 │   └── demos/                       # Component demos
 │       ├── button.tsx
+│       ├── input.tsx
 │       ├── badge.tsx
 │       ├── divider.tsx
 │       ├── filter-tab.tsx
-│       ├── login.tsx
 │       ├── spacer.tsx
+│       ├── login.tsx
+│       ├── coffee-shop.tsx
 │       └── demo-container.tsx
 │
 └── screens/
-    └── login/
-        └── login-screen.tsx         # Login implementation
+    ├── login/
+    │   └── login-screen.tsx
+    └── coffee-shop/
+        └── coffee-shop-screen.tsx
 ```
-
-## Project Structure
-
-- `components/ui/` - Main UI components
-  - `button.tsx` - Button component
-  - `input.tsx` - Input component
-  - `spacer.tsx` - Spacer component
-  - `divider.tsx` - Divider component
-  - `badge.tsx` - Badge component
-  - `tabs.tsx` - Tabs component
-- `components/demos/` - Example usage
-  - `ButtonDemo.tsx` - Button examples
-  - `InputDemo.tsx` - Input examples
-  - `SpacerDemo.tsx` - Spacer examples
-  - `DividerDemo.tsx` - Divider examples
-  - `BadgeDemo.tsx` - Badge examples
-  - `TabsDemo.tsx` - Tabs examples
 
 ## Features
 

@@ -1,5 +1,6 @@
 import BadgeDemo from '@/components/demos/badge'
 import ButtonDemo from '@/components/demos/button'
+import CoffeeShopDemo from '@/components/demos/coffee-shop'
 import DividerDemo from '@/components/demos/divider'
 import FilterTabsDemo from '@/components/demos/filter-tab'
 import InputDemo from '@/components/demos/input'
@@ -19,7 +20,12 @@ export default function Index() {
         </View>
 
         {/* Screens Section */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Screens</Text>
+        </View>
+
         <LoginDemo />
+        <CoffeeShopDemo />
 
         {/* Components Section */}
         <View style={styles.section}>
