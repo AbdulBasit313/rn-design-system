@@ -1,4 +1,3 @@
-import DemoContainer from '@/components/demos/demo-container'
 import { Ionicons } from '@expo/vector-icons'
 import { LinearGradient } from 'expo-linear-gradient'
 import { router } from 'expo-router'
@@ -6,25 +5,23 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 
 const CoffeeShopDemo = () => {
   return (
-    <DemoContainer title="Screens">
-      <Pressable onPress={() => router.push('/screens/coffee-shop')} style={styles.card}>
-        <LinearGradient
-          colors={['#6B4226', '#8B5A3C']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 1 }}
-          style={styles.gradient}
-        >
-          <View style={styles.iconContainer}>
-            <Ionicons name="cafe-outline" size={28} color="#fff" />
-          </View>
-          <View style={styles.textContainer}>
-            <Text style={styles.title}>Coffee Shop</Text>
-            <Text style={styles.subtitle}>Tap to preview full screen</Text>
-          </View>
-          <Ionicons name="chevron-forward" size={24} color="rgba(255,255,255,0.8)" />
-        </LinearGradient>
-      </Pressable>
-    </DemoContainer>
+    <Pressable onPress={() => router.push('/screens/coffee-shop')} style={styles.card}>
+      <LinearGradient
+        colors={['#6B4226', '#8B5A3C']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={styles.gradient}
+      >
+        <View style={styles.iconContainer}>
+          <Ionicons name="cafe-outline" size={28} color="#fff" />
+        </View>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>Coffee Shop</Text>
+          <Text style={styles.subtitle}>Tap to preview full screen</Text>
+        </View>
+        <Ionicons name="chevron-forward" size={24} color="rgba(255,255,255,0.8)" />
+      </LinearGradient>
+    </Pressable>
   )
 }
 

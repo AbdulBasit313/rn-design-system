@@ -3,9 +3,9 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { router } from 'expo-router'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 
-const LoginDemo = () => {
+const AppBarDemo = () => {
   return (
-    <Pressable onPress={() => router.push('/screens/login')} style={styles.card}>
+    <Pressable onPress={() => router.push('/screens/app-bar')} style={styles.card}>
       <LinearGradient
         colors={['#1C339A', '#2947C7']}
         start={{ x: 0, y: 0 }}
@@ -16,7 +16,7 @@ const LoginDemo = () => {
           <Ionicons name="log-in-outline" size={28} color="#fff" />
         </View>
         <View style={styles.textContainer}>
-          <Text style={styles.title}>Login Screen</Text>
+          <Text style={styles.title}>AppBar Demos</Text>
           <Text style={styles.subtitle}>Tap to preview full screen</Text>
         </View>
         <Ionicons name="chevron-forward" size={24} color="rgba(255,255,255,0.8)" />
@@ -25,7 +25,7 @@ const LoginDemo = () => {
   )
 }
 
-export default LoginDemo
+export default AppBarDemo
 
 const styles = StyleSheet.create({
   card: {

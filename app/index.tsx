@@ -1,3 +1,4 @@
+import AppBarDemo from '@/components/demos/app-bar'
 import BadgeDemo from '@/components/demos/badge'
 import ButtonDemo from '@/components/demos/button'
 import CoffeeShopDemo from '@/components/demos/coffee-shop'
@@ -32,6 +33,7 @@ export default function Index() {
           <Text style={styles.sectionTitle}>Components</Text>
         </View>
 
+        <AppBarDemo />
         <FilterTabsDemo />
         <BadgeDemo />
         <ButtonDemo />

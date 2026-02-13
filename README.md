@@ -14,6 +14,7 @@ Made with ❤️ for the React Native community!
 - [Button](#button)
 - [Card](#card)
 - [Input](#input)
+- [AppBar](#app-bar)
 - [Spacer](#spacer)
 - [Divider](#divider)
 - [Badge](#badge)
@@ -44,6 +45,13 @@ Made with ❤️ for the React Native community!
 - Login screen demo
 
 ![Input Component](/assets/images/components/input.jpeg)
+
+### AppBar
+
+- 6 Variant
+- Support Subtitle and icons
+
+![AppBar Component](/assets/images/components/AppBar%20demo%20screen.jpeg)
 
 ### Spacer
 
@@ -100,6 +108,7 @@ A fully-featured, production-ready authentication screen.
 │   │   ├── text-input/
 │   │   │   ├── outlined.tsx         # Bordered input
 │   │   │   └── filled.tsx           # Soft background input
+│   │   ├── app-bar.tsx
 │   │   ├── card.tsx
 │   │   ├── badge.tsx
 │   │   ├── divider.tsx
