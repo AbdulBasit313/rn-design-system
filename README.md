@@ -14,6 +14,7 @@ Made with ❤️ for the React Native community!
 - [Button](#button)
 - [Card](#card)
 - [Input](#input)
+- [Typography](#typography)
 - [AppBar](#app-bar)
 - [Spacer](#spacer)
 - [Divider](#divider)
@@ -45,6 +46,13 @@ Made with ❤️ for the React Native community!
 - Login screen demo
 
 ![Input Component](/assets/images/components/input.jpeg)
+
+### Typography
+
+- Complete typography system
+- Support variants, colors, and so many other properties
+
+![typography Component](/assets/images/components/typography-design-system.jpeg)
 
 ### AppBar
 

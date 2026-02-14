@@ -7,6 +7,7 @@ import FilterTabsDemo from '@/components/demos/filter-tab'
 import InputDemo from '@/components/demos/input'
 import LoginDemo from '@/components/demos/login'
 import SpacerDemo from '@/components/demos/spacer'
+import TypographyDemo from '@/components/demos/typography-system'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
@@ -34,6 +35,7 @@ export default function Index() {
         </View>
 
         <AppBarDemo />
+        <TypographyDemo />
         <FilterTabsDemo />
         <BadgeDemo />
         <ButtonDemo />
