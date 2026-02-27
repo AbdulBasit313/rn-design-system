@@ -15,8 +15,9 @@ Made with ❤️ for the React Native community!
 - [Card](#card)
 - [Input](#input)
 - [Typography](#typography)
-- [AppBar](#app-bar)
+- [AppBar](#appbar)
 - [Spacer](#spacer)
+- [SearchBar](#searchbar)
 - [Divider](#divider)
 - [Badge](#badge)
 - [Tabs](#tabs)
@@ -68,6 +69,12 @@ Made with ❤️ for the React Native community!
 - Control spacing using props
 
 ![Spacer Component](/assets/images/components/spacer.jpeg)
+
+### SearchBar
+
+- Minimal design with close icon
+
+![SearchBar Component](/assets/images/components/search-bar.jpeg)
 
 ### Divider
 
